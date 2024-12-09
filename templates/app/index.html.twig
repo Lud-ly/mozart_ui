@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}InfoDevLm{% endblock %}
+
+{% block body %}
+    {% include '_partials/_flash.html.twig' %}
+
+    <div 
+        {{ react_component('MainController',
+        { username: app.user.username , title: global_title }
+        ) }}
+    >
+    </div>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Vérification Email Requise{% endblock %}
+
+{% block body %}
+
+    <div class="wrapper">
+        <div class="card">
+            <a href="{{ path('app_main') }}" class="backsizedbtn">
+            ⬅️
+            </a>
+            <h3 class="card-title">Vérification de compte Devlm</h3> 
+
+            {% for message in app.flashes('info') %}
+                <div class="alert alert-info">
+                    {{ message }}
+                </div>
+            {% endfor %}
+
+            <div class="card-body">
+                <p class="lead">Pour accéder à cette page, vous devez d'abord vérifier votre adresse email.</p>
+                <p>Un email de confirmation vous a été envoyé lors de votre inscription.</p>
+            </div>
+
+            <div class="actions">
+                <p class="text-muted">Vous n'avez pas reçu l'email ?</p>
+                <a href="{{ path('app_verify_email', { id: user.id, resend: 'true' }) }}" class="btn-primary">Renvoyer l'email de confirmation</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

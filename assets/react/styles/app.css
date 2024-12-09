@@ -1,0 +1,31 @@
+@import 'variables.css';
+@import './partials/_inputs.css';
+@import './partials/_alerts.css';
+@import './partials/_text.css';
+@import './partials/_buttons.css';
+@import './partials/_nav.css';
+@import './partials/_connexion.css';
+@import './partials/_form.css';
+@import './partials/_link.css';
+@import './partials/_layout.css';
+@import './partials/_card.css';
+@import './partials/_icons.css';
+@import './partials/_badges.css';
+@import './partials/_icons.css';
+@import './partials/_queries.css';
+
+
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--white);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

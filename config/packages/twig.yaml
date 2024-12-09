@@ -1,0 +1,8 @@
+twig:
+    file_name_pattern: '*.twig'
+    globals:
+        global_title: 'Devlm Home secure page'
+
+when@test:
+    twig:
+        strict_variables: true
